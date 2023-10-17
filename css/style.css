@@ -108,7 +108,6 @@ header {
 	top: 80px;
 	left: -300px;
 	background: #fff;
-	border-top: 1px solid #5500aa50;
 	border-right: 1px solid #5500aa50;
 	padding: 10px 20px;
 	display: flex;
@@ -116,7 +115,6 @@ header {
 	justify-content: space-between;
 	transition: .4s ease-out;
 	z-index: 1000;
-	box-shadow: 0 0 3px black;
 }
 
 .sidebar.active {
@@ -285,4 +283,205 @@ header {
 	.icon-arrow {
 		display: none;
 	}
+}
+
+#skills {
+	min-height: 100vh;
+	padding: 0 30px;
+	padding-top: 80px;
+}
+
+#skills .header {
+	width: 100%;
+	margin-bottom: 40px;
+	margin-top: 80px;
+	display: grid;
+	place-items: center;
+}
+
+.header h2 {
+	margin-bottom: -5px;
+}
+
+.header h2 span {
+	color: #50a;
+}
+
+.skill-main {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 50px;
+	grid-row-gap: 30px;
+}
+
+.skill-bar .info {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.skill-bar .info .percent {
+	font-weight: bold;
+}
+
+.skill-bar .bar {
+	width: 100%;
+	height: 10px;
+	background: #999;
+	border-radius: 25px;
+	margin-top: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.skill-bar .bar span {
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background: #50a;
+}
+
+.skill-bar .bar .html.animate {
+	width: 85%;
+	animation: html 3s ease-in-out backwards;
+}
+
+@keyframes html {
+	0% { width: 0; }
+	100% { width: 85%; }
+}
+
+.skill-bar .bar .css {
+	width: 0%;
+}
+
+.skill-bar .bar .css.animate {
+	width: 80%;
+	animation: css 3s ease-in-out;
+}
+
+@keyframes css {
+	0% { width: 0; }
+	100% { width: 80%; }
+}
+
+.skill-bar .bar .javascript.animate {
+	width: 95%;
+	animation: javascript 3s ease-in-out;
+}
+
+@keyframes javascript {
+	0% { width: 0; }
+	100% { width: 95%; }
+}
+
+.skill-bar .bar .typescript.animate {
+	width: 90%;
+	animation: typescript 3s ease-in-out;
+}
+
+@keyframes typescript {
+	0% { width: 0; }
+	100% { width: 90%; }
+}
+
+.skill-bar .bar .nodejs.animate {
+	width: 95%;
+	animation: nodejs 3s ease-in-out;
+}
+
+@keyframes nodejs {
+	0% { width: 0; }
+	100% { width: 95%; }
+}
+
+.skill-bar .bar .react.animate {
+	width: 70%;
+	animation: react 3s ease-in-out;
+}
+
+@keyframes react {
+	0% { width: 0; }
+	100% { width: 70%; }
+}
+
+.skill-bar .bar .react-native.animate {
+	width: 90%;
+	animation: react-native 3s ease-in-out;
+}
+
+@keyframes react-native {
+	0% { width: 0; }
+	100% { width: 90%; }
+}
+
+.skill-bar .bar .express.animate {
+	width: 65%;
+	animation: express 3s ease-in-out;
+}
+
+@keyframes express {
+	0% { width: 0; }
+	100% { width: 65%; }
+}
+
+.skill-bar .bar .java.animate {
+	width: 40%;
+	animation: java 3s ease-in-out;
+}
+
+@keyframes java {
+	0% { width: 0; }
+	100% { width: 40%; }
+}
+
+.skill-bar .bar .git-github.animate {
+	width: 80%;
+	animation: git-github 3s ease-in-out;
+}
+
+@keyframes git-github {
+	0% { width: 0; }
+	100% { width: 80%; }
+}
+
+.skill-bar .bar .mongodb.animate {
+	width: 40%;
+	animation: mongodb 3s ease-in-out;
+}
+
+@keyframes mongodb {
+	0% { width: 0; }
+	100% { width: 40%; }
+}
+
+.skill-bar .bar .sqlite.animate {
+	width: 40%;
+	animation: sqlite 3s ease-in-out;
+}
+
+@keyframes sqlite {
+	0% { width: 0; }
+	100% { width: 40%; }
+}
+
+@media screen and (max-width: 600px) {
+	.skill-main {
+		grid-template-columns: 1fr;
+	}
+}
+
+#projects {
+	min-height: 100vh;
+	padding: 0 30px;
+	padding-top: 80px;
+}
+
+#projects .header {
+	width: 100%;
+	margin-bottom: 40px;
+	margin-top: 80px;
+	display: grid;
+	place-items: center;
 }
