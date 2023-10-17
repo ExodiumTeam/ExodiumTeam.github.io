@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
 	margin: 0;
@@ -83,8 +84,13 @@ header {
 }
 
 @keyframes text-gradient {
-	0% { background-position-x: 0%; }
-	100% { background-position: 400%; }
+	0% {
+		background-position-x: 0%;
+	}
+
+	100% {
+		background-position: 400%;
+	}
 }
 
 .animated-title a {
@@ -251,6 +257,7 @@ header {
 .about p {
 	width: 80%;
 	margin-bottom: 30px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .icon-arrow {
@@ -262,12 +269,15 @@ header {
 }
 
 @keyframes arrow-animated {
-	0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
 
 }
 
@@ -305,6 +315,10 @@ header {
 
 .header h2 span {
 	color: #50a;
+}
+
+.header p {
+	font-family: 'Roboto', sans-serif;
 }
 
 .skill-main {
@@ -348,8 +362,13 @@ header {
 }
 
 @keyframes html {
-	0% { width: 0; }
-	100% { width: 85%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 85%;
+	}
 }
 
 .skill-bar .bar .css {
@@ -362,8 +381,13 @@ header {
 }
 
 @keyframes css {
-	0% { width: 0; }
-	100% { width: 80%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 80%;
+	}
 }
 
 .skill-bar .bar .javascript.animate {
@@ -372,8 +396,13 @@ header {
 }
 
 @keyframes javascript {
-	0% { width: 0; }
-	100% { width: 95%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 95%;
+	}
 }
 
 .skill-bar .bar .typescript.animate {
@@ -382,8 +411,13 @@ header {
 }
 
 @keyframes typescript {
-	0% { width: 0; }
-	100% { width: 90%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 90%;
+	}
 }
 
 .skill-bar .bar .nodejs.animate {
@@ -392,8 +426,13 @@ header {
 }
 
 @keyframes nodejs {
-	0% { width: 0; }
-	100% { width: 95%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 95%;
+	}
 }
 
 .skill-bar .bar .react.animate {
@@ -402,8 +441,13 @@ header {
 }
 
 @keyframes react {
-	0% { width: 0; }
-	100% { width: 70%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 70%;
+	}
 }
 
 .skill-bar .bar .react-native.animate {
@@ -412,8 +456,13 @@ header {
 }
 
 @keyframes react-native {
-	0% { width: 0; }
-	100% { width: 90%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 90%;
+	}
 }
 
 .skill-bar .bar .express.animate {
@@ -422,8 +471,13 @@ header {
 }
 
 @keyframes express {
-	0% { width: 0; }
-	100% { width: 65%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 65%;
+	}
 }
 
 .skill-bar .bar .java.animate {
@@ -432,8 +486,13 @@ header {
 }
 
 @keyframes java {
-	0% { width: 0; }
-	100% { width: 40%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 40%;
+	}
 }
 
 .skill-bar .bar .git-github.animate {
@@ -442,8 +501,13 @@ header {
 }
 
 @keyframes git-github {
-	0% { width: 0; }
-	100% { width: 80%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 80%;
+	}
 }
 
 .skill-bar .bar .mongodb.animate {
@@ -452,8 +516,13 @@ header {
 }
 
 @keyframes mongodb {
-	0% { width: 0; }
-	100% { width: 40%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 40%;
+	}
 }
 
 .skill-bar .bar .sqlite.animate {
@@ -462,8 +531,13 @@ header {
 }
 
 @keyframes sqlite {
-	0% { width: 0; }
-	100% { width: 40%; }
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 40%;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -484,4 +558,216 @@ header {
 	margin-top: 80px;
 	display: grid;
 	place-items: center;
+}
+
+#contact {
+	min-height: 100vh;
+	padding: 0 20px;
+	padding-top: 80px;
+}
+
+#contact .header {
+	width: 100%;
+	margin-bottom: 40px;
+	margin-top: 80px;
+	display: grid;
+	place-items: center;
+}
+
+.container {
+	width: 100%;
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px 60px 40px 40px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.container .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.content .left-side {
+	width: 25%;
+	height: 100%;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.content .left-side::before {
+	content: '';
+	position: absolute;
+	height: 70%;
+	width: 2px;
+	background: #50a;
+	right: -15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.content .left-side .details {
+	margin: 14px;
+	text-align: center;
+}
+
+.content .left-side .details i {
+	font-size: 25px;
+	color: #50a;
+}
+
+.details .topic {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.details .text-one,
+.details .text-two {
+	font-size: 14px;
+	color: black;
+	opacity: .7;
+	font-family: 'Roboto', sans-serif;
+}
+
+.content .right-side {
+	width: 75%;
+	margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+	font-size: 23px;
+	font-weight: 700;
+	color: #50a;
+	font-family: 'Poppins', sans-serif;
+}
+
+.topic-text ~ p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.right-side .input-box {
+	height: 50px;
+	width: 100%;
+	margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+	height: 100%;
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	background: #ddd;
+	font-weight: 500;
+	padding: 0 15px;
+	resize: none;
+}
+
+.right-side .message-box {
+	min-height: 110px;
+}
+
+.right-side .input-box textarea {
+	padding: 10px 15px;
+}
+.right-side .input-button input[type="button"] {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	background: #50a;
+	border: none;
+	border-radius: 6px;
+	padding: 8px;
+	outline: none;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.input-button input[type="button"]:hover {
+	background: #70a;
+	opacity: .8;
+}
+
+@media screen and (max-width: 952px) {
+	.container {
+		width: 90%;
+		margin: 30px 35px 40px 35px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.container {
+		margin: 40px auto;
+		height: 100%;
+	}
+
+	.container .content {
+		flex-direction: column-reverse;
+	}
+
+
+	.content .left-side {
+		width: 100%;
+		flex-direction: row;
+		margin-top: 40px;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.content .left-side.left-side::before {
+		display: none;
+	}
+
+	.content .right-side {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body>footer {
+	background: black;
+/*	height: 120px;*/
+	width: 100%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+footer .more-info {
+	width: 100%;
+	padding: 10px 30px;
+	display: flex;
+	align-items: center;
+}
+
+footer .more-info strong {
+	margin-left: 40px;
 }
