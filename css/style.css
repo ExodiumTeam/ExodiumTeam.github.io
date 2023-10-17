@@ -8,7 +8,7 @@
 
 html,
 body {
-	min-height: 200vh;
+	min-height: 100vh;
 	background: #ddd;
 	user-select: none;
 }
@@ -215,6 +215,5 @@ header {
 
 #about {
 	padding: 80px 30px 0 30px;
-	border: 1px solid black;
 	height: 100vh;
 }
