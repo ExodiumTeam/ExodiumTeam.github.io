@@ -9,7 +9,7 @@
 html,
 body {
 	min-height: 100vh;
-	background: #ddd;
+	background: #fff;
 	user-select: none;
 }
 
@@ -25,7 +25,9 @@ header {
 	padding: 0 30px;
 	justify-content: space-between;
 	background: #fff;
+	border-bottom: 1px solid rgba(0, 0, 0, .4);
 	position: fixed;
+	z-index: 1000;
 	width: 100%;
 }
 
@@ -114,6 +116,7 @@ header {
 	justify-content: space-between;
 	transition: .4s ease-out;
 	z-index: 1000;
+	box-shadow: 0 0 3px black;
 }
 
 .sidebar.active {
@@ -216,4 +219,70 @@ header {
 #about {
 	padding: 80px 30px 0 30px;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#about h2 {
+	font-size: 35px;
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+	width: fit-content;
+	color: rgba(0, 0, 0, .9);
+}
+
+#about h2::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 50%;
+	height: 2px;
+	background: #50a;
+}
+
+.about {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about p {
+	width: 80%;
+	margin-bottom: 30px;
+}
+
+.icon-arrow {
+	align-self: center;
+	font-size: 40px;
+	color: #50a;
+	position: relative;
+	animation: arrow-animated 5s ease infinite;
+}
+
+@keyframes arrow-animated {
+	0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+	#about h2 {
+		font-size: 24px;
+	}
+
+	.about p {
+		width: 100%;
+	}
+
+	.icon-arrow {
+		display: none;
+	}
 }
